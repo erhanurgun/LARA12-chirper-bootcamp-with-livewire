@@ -13,11 +13,11 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         \App\Models\User::factory()->create([
-            'name' => 'erho.dev',
+            'name' => 'erho.dev (me)',
             'email' => 'me@erho.dev',
             'password' => bcrypt('E4i@wbSve7k$#Nk1Vc'),
         ]);
 
-        \App\Models\User::factory()->count(10)->create();
+        // \App\Models\User::factory()->count(10)->create();
     }
 }
